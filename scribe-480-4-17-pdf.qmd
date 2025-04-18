@@ -80,7 +80,7 @@ As the branching factor increases, the approximation gets more exact \(i.e., sum
 :::
 
 - The total number of nodes at depth d is $b ^ d$. In BFS, all nodes at level n have to be stored, while DFS only needs to remember its parent.
-- Check out the [spreadsheet]() for a more in-depth playground on different overhead factors.
+- Check out the [spreadsheet](https://docs.google.com/spreadsheets/d/1YyDKoZY7L3jqaphLZFBkb2JONXQRSecKQdwn3-kCvpk/edit?gid=0#gid=0) for a more in-depth playground on different overhead factors.
 
 DFS and BFS work great if there are no costs or weights to the graph, but realistically there are.
 
