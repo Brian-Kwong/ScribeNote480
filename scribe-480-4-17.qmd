@@ -1,6 +1,6 @@
 ---
-title: "CSC 480 Artificial Intelligence"
-date: "today"
+title: "CSC 480 Artificial Intelligence Searching Algorithms"
+date: "04-17-2025"
 author: "Brian Kwong"
 format: 
    html:
@@ -118,15 +118,15 @@ Example of Uninformed Search on Basic Graph:
 ::: {.callout-note}
 **Node Color Labels**
 
-- ![](./done.svg){width=20} Green:  
+- ![](./assets/done.svg){width=20} Green:  
 Searched and Completed.
-- ![](./searching.svg){width=20} Yellow:  
+- ![](./assets/searching.svg){width=20} Yellow:  
 Searching.
-- ![](./queue.svg){width=20} Red:  
+- ![](./assets/queue.svg){width=20} Red:  
 In the fringe to be explored.
 :::
 
-![Example of Uniform Search / Dijkstra's Algorithm](./Dijakestria.gif){width=300}
+![Example of Uniform Search / Dijkstra's Algorithm](./assets/Dijakestria.gif){width=300}
 
 ### Bidirectional Search
 Bidirectional search:  
@@ -221,15 +221,15 @@ def greedy(root):
 ::: {.callout-note}
 **Node Color Labels**
 
-- ![](./done.svg){width=20} Green:  
+- ![](./assets/done.svg){width=20} Green:  
 Searched and Completed.
-- ![](./searching.svg){width=20} Yellow:  
+- ![](./assets/searching.svg){width=20} Yellow:  
 Searching.
-- ![](./queue.svg){width=20} Red:  
+- ![](./assets/queue.svg){width=20} Red:  
 In the fringe to be explored.
 :::
 
-![Example of Informed Greedy Algorithm](./greedy.gif){width=300}
+![Example of Informed Greedy Algorithm](./assets/greedy.gif){width=300}
 
 #### When Should You Use Greedy?
 1. Your heuristics are really good.
@@ -272,15 +272,15 @@ def aStar(root):
 ::: {.callout-note}
 **Node Color Labels**
 
-- ![](./done.svg){width=20} Green:  
+- ![](./assets/done.svg){width=20} Green:  
 Searched and Completed.
-- ![](./searching.svg){width=20} Yellow:  
+- ![](./assets/searching.svg){width=20} Yellow:  
 Searching.
-- ![](./queue.svg){width=20} Red:  
+- ![](./assets/queue.svg){width=20} Red:  
 In the fringe to be explored.
 :::
 
-![Example of Informed Greedy Algorithm](./a_star.gif){width=300}
+![Example of Informed Greedy Algorithm](./assets/a_star.gif){width=300}
 
 When a node is enqueued to the fringe, its `f(n)` is calculated and placed as metadata of the node.
 
@@ -295,7 +295,7 @@ However, we can eliminate all items in the queue that are greater than `F(n)` of
 ::: {.callout-caution}
 When choosing heuristics, you should not choose heuristics that are an overestimate of the real cost as it creates delusions.
 
-![The following example shows an example of an **overestimate** of heuristics which would make A* waste time discovering a non-optimal route.](./nop.png){width=200}
+![The following example shows an example of an **overestimate** of heuristics which would make A* waste time discovering a non-optimal route.](./assets/nop.png){width=200}
 :::
 
 ::: {.callout-tip}
@@ -325,7 +325,7 @@ If you have multiple admissible heuristics from A --> B, then the **maximum** of
 
 8 Puzzle is a sliding board puzzle where there are 8 numbered pieces on a `3 x 3` board. The goal is to arrange the puzzle pieces in a specific order such as:
 
-| ![Original 8 Puzzle Ex](./unsolved.png){width=100} | ![Solved 8 Puzzle Ex](./solved.png){width=100} |
+| ![Original 8 Puzzle Ex](./assets/unsolved.png){width=100} | ![Solved 8 Puzzle Ex](./assets/solved.png){width=100} |
 | :---: | :---: |
 | *Original 8 Puzzle Ex* | *Solved 8 Puzzle Ex* |
 
